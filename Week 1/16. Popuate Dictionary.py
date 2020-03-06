@@ -12,11 +12,15 @@
 
 
 # Tupla de datos personales a pedirle a los users, agregar todos los items deseados
+# Tuple containing the personal data fields that the user will be asked to fill in.
+# Add any other necessary fields to the 'usr_data' tuple
+
 usr_data = ("Name", "Age", "Gender", "Phone", "email", "Address")
 
-# Diccionario vacío
+# Empty dictionary
 person = {}
 
+# Iterate over the Personal Data tuple and ask the user for input
 for x in usr_data:
     while usr_data.index(x) < len(usr_data):
         person[x] = input("Please enter your " + x + ": ")

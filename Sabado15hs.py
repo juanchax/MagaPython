@@ -1,51 +1,5 @@
 '''
 
-# 01 -----
-# Imprimir en pantalla "Hola Mundo!"
-
-print("Hola Mundo!")
-
-
-# 02 -----
-# Crear un programa en el cual se almacene en una variable el string "Hola Mundo!"
-# y luego se imprima por pantalla dicha variable.
-
-texto = "Hola Mundo!"
-print(texto)
-
-
-# 03 -----
-# Crear un programa que pregunte al usuario su nombre y edad
-# y luego imprima esos datos en renglones distintos.
-
-nombre = input("Por favor ingrese su nombre: ")
-edad = input("Por favor ingrese su edad: ")
-
-print(nombre)
-print(edad)
-
-
-# 04 -----
-# Crear un programa que pregunte al usuario su nombre y devuelva "¡Hola {nombre}!"
-
-nombre = input("Por favor ingrese su nombre: ")
-print("¡Hola " + nombre + "!")
-
-
-# 05 -----
-# Crear un programa que pida al usuario ingresar 2 números por teclado
-# y devuelva por pantalla la suma de ellos en un renglón,
-# la resta en otro, el producto en otros y la división en otro.
-
-print("A continuación se le pedirá que ingrese dos números.")
-number_1 = int(input("Por favor ingrese el primer número: "))
-number_2 = int(input("Por favor ingrese el segundo número: "))
-
-print(number_1 + number_2)
-print(number_1 - number_2)
-print(number_1 * number_2)
-print(number_1 / number_2)
-
 
 # 06 -----
 # Crear un programa que calcule cuánto dinero tendré
@@ -190,22 +144,3 @@ for keys in keys_asignaturas:
     print(keys + " tiene " + str(creds_asignaturas[keys]) + " créditos.")
 
 print("Total de créditos: " + str(sum(creds_asignaturas.values())))
-
-# 16 -----
-# Crear un programa que cree un diccionario vacío y lo vaya llenado con información sobre una persona
-# (por ejemplo nombre, edad, sexo, teléfono, correo electrónico, etc.)
-# que se le pida al usuario.
-# Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
-
-
-# Tupla de datos personales a pedirle a los users, agregar todos los items deseados
-datos_personales = ("Nombre", "Edad", "Genero", "Telefono", "email", "Direccion")
-
-# Diccionario vacío
-person = {}
-
-for x in datos_personales:
-    while datos_personales.index(x) < len(datos_personales):
-        person[x] = input("Por favor ingrese su " + x + ": ")
-        print(person)
-        break
