@@ -6,10 +6,16 @@
 # donde <asignatura> es cada una de las asignaturas del curso,
 # y <créditos> son sus créditos. Al final debe mostrar también el número total de créditos del curso.
 
+
+def showSubjects(asigsDict):
+
+    keys_asignaturas = list(asigsDict.keys())
+    for keys in keys_asignaturas:
+        print(keys + " tiene " + str(asigsDict[keys]) + " créditos.")
+    else:
+        print("Total de créditos: " + str(sum(asigsDict.values())))
+
+
+# create dictionary with the subjects and their credits
 creds_asignaturas = {'Matemáticas': 6, 'Física': 4, 'Química': 5}
-keys_asignaturas = list(creds_asignaturas.keys())
-
-for keys in keys_asignaturas:
-    print(keys + " tiene " + str(creds_asignaturas[keys]) + " créditos.")
-
-print("Total de créditos: " + str(sum(creds_asignaturas.values())))
+showSubjects(creds_asignaturas)
