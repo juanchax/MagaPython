@@ -3,7 +3,7 @@
 # imprimirlo por pantalla, si tiene entre 50 y 100 caracteres imprimirlo al revés, si no se cumple
 # ninguna de las opciones anteriores, por pantalla devolver un mensaje que diga "su mensaje es demasiado corto".
 
-def inputMessage():
+def checkMessgLength():
 
     message = input("Please enter you message: ")
     messageLength = len(message)
@@ -23,4 +23,4 @@ def inputMessage():
         print("Your message is too short. ")
 
 
-inputMessage()
+checkMessgLength()
