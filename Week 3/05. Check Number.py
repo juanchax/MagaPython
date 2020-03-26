@@ -59,11 +59,13 @@ def printResult(boolList):
         print("True")
 
     elif sum(boolList) == 0:
-        print("False")
-
-    else:
         print("None")
 
+    else:
+        print("False")
+
+
+# Main program
 
 inList = inputParams()
 checkedList = buildTrueFalseList(inList)
