@@ -65,4 +65,7 @@ def printResult(boolList):
         print("None")
 
 
+inList = inputParams()
+checkedList = buildTrueFalseList(inList)
+printResult(checkedList)
 
