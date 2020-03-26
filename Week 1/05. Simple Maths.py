@@ -6,7 +6,7 @@
 # la resta en otro, el producto en otros y la división en otro.
 
 print("You will be asked to enter two integers. Press 'Enter' to begin. "
-      "\nA continuación se le pedirá que ingrese dos números. Presione 'Enter' para comenzar.\n")
+      "\nA continuación se le pedirá que ingrese dos números enteros. Presione 'Enter' para comenzar.\n")
 number_1 = int(input("Please enter the first integer \nPor favor ingrese el primer número: "))
 number_2 = int(input("Please enter the second integer \nPor favor ingrese el segundo número: "))
 
