@@ -3,7 +3,7 @@
 # Escribir un programa que seleccione una operación de cuatro operaciones numéricas
 # disponibles, una vez seleccionada la operación, introducir dos números y ejecutar la operación.
 
-case = int(input("Por favor seleccione una operación:"
+case = int(input("Por favor seleccione una operación (ingrese el número):"
                  "1 - Suma"
                  "2 - Resta"
                  "3 - Multiplicación"
